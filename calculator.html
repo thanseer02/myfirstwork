@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script>
+        function add()
+        {
+            var a=parseInt(document.getElementById('f').value);
+            var b=parseInt(document.getElementById('s').value);
+            s=a+b;
+            document.getElementById("r").innerHTML=a+"+"+b+"="+s;
+
+        }    
+        function diff()
+        {
+            var a=parseInt(document.getElementById('f').value);
+            var b=parseInt(document.getElementById('s').value);
+            d=a-b;
+            document.getElementById('r').innerHTML=a+"-"+b+"="+d;
+
+        } 
+        function mul()
+        {
+            var a=parseInt(document.getElementById('f').value);
+            var b=parseInt(document.getElementById('s').value);
+            m=a*b;
+            document.getElementById('r').innerHTML=a+"*"+b+"="+m;
+
+        }
+        function div()
+        {
+            var a=parseInt(document.getElementById('f').value);
+            var b=parseInt(document.getElementById('s').value);
+            di=a/b;
+            document.getElementById("r").innerHTML=a+"/"+b+"="+di;
+
+        }           
+        </script>
+    
+    </head>
+    <body bgcolor="black">
+        <font color="white">
+        <center>
+       <br>
+       <br>
+       <br>
+         <h1><i><u>calculator</u></i></h1>
+        <input type="text" id="f"><br>
+        <input type="text" id="s"><br>
+        <input type="button" value="+" onclick="add()">
+        <input type="button" value="-" onclick="diff()">
+        <input type="button" value="*" onclick="mul()">
+        <input type="button" value="/" onclick="div()">
+        <p id="r"></p>
+        </font>
+        </center>
+    </body>
+</html>
